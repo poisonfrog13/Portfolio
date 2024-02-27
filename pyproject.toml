@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 django = "^5.0.2"
+pillow = "^10.2.0"
+pillow-pil = "^0.1.dev0"
 
 
 [build-system]

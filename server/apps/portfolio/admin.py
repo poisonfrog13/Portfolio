@@ -1,3 +1,5 @@
 from django.contrib import admin
+from server.apps.portfolio.models import Projects, Skills
 
-# Register your models here.
+admin.site.register(Projects)
+admin.site.register(Skills)

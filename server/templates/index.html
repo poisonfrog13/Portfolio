@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+  {% block title %} Portfolio {% endblock %}
+
+  {% block template %}
+
+    {% if project %}
+
+
+        <h2><a href="server/apps/portfolio/{{project.id}}/">{{ project.title }}</h2>
+        <h3>{{ project.subtitle }}</h3>
+        <p> {{project.text }} </p>
+
+
+    {% endif %}
+
+
+  {% endblock %}
+

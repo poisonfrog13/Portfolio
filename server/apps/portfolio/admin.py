@@ -1,5 +1,5 @@
 from django.contrib import admin
-from server.apps.portfolio.models import Projects, Skills
+from server.apps.portfolio.models import Project, Skill
 
-admin.site.register(Projects)
-admin.site.register(Skills)
+admin.site.register(Project)
+admin.site.register(Skill)

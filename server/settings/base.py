@@ -26,13 +26,14 @@ SECRET_KEY = 'django-insecure-71p%bm*9@65c57u8a&+g89&x3t1^y0+ec)=(igx6dzx^re2w+u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'server.apps.portfolio',
+    'fontawesomefree',
     
     'django.contrib.admin',
     'django.contrib.auth',
@@ -55,6 +56,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'server.urls'
 
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+
 
 TEMPLATES = [
     {
@@ -122,9 +124,15 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'collected_static')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
-MEDIA_ROOT = 'media'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# MEDIA_ROOT = 'media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
 
 
 # Default primary key field type

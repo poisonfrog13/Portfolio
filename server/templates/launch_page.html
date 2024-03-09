@@ -1,0 +1,65 @@
+{% load static %}
+
+<div class="border border-dark min-vh-100 d-flex flex-wrap align-items-center position-relative  pico-background-zinc-900">
+
+    <!-- BACKGROUND -->
+    <div onload="followMouse()" class="position-absolute h-100 w-100 overflow-hidden">
+        <div id="floating-ball"></div>
+    </div>
+
+
+
+
+    <!-- HERO SECTION + LINKS -->
+    <div class="flex-container px-2 px-sm-5">
+        <div class="px-0 py-5 my-5 mt-3 pt-5 text-center z-n5">
+
+            <h1 class="display-3 py-5 fw-bold pico-color-sand-50 text-capitalize">Centered hero</h1>
+            <!-- <h1 class="pico-color-amber-200">Pink title</h1> -->
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-3">I am a software developer with a passion for learning, problem-solving and
+                    creating. I am excited about the prospect to grow as a developer and enthusiastic about contributing
+                    to meaningful and impactful projects.</p>
+
+            </div>
+
+            <div class="d-flex  mt-4 justify-content-center">
+
+                <!-- <span class="mx-4 px-3 py-3 border border-dark"> -->
+                <span class="mx-4 px-3 py-3">
+                    <a href="https://github.com/poisonfrog13">
+                        <div class="icon"><img src="{% static 'icons/github.svg' %}" alt="github icon"></div>
+                    </a>
+                </span>
+
+                <!-- <span class="mx-4 px-3 py-3 border border-dark"> -->
+                <span class="mx-4 px-3 py-3">
+                    <a href="#">
+                        <div class="icon"><img src="{% static 'icons/linkedin.svg' %}" alt="linkedin icon"></div>
+                    </a>
+                </span>
+
+                <!-- <span class="mx-4 px-3 py-3 border border-dark"> -->
+                <span class="mx-4 px-3 py-3">
+                    <a href="#">
+                        <div class="icon"><img src="{% static 'icons/resume.svg' %}" alt="resume icon"></div>
+                    </a>
+                </span>
+
+                <!-- <span class="mx-4 px-3 py-3 border border-dark"> -->
+                <span class="mx-4 px-3 py-3">
+                    <a href="#">
+                        <div class="icon"><img src="{% static 'icons/sendemail.svg' %}" alt="send email icon"></div>
+                    </a>
+                </span>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</div>
+<!-- HERO SECTION + LINKS -->

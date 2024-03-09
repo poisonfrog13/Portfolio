@@ -4,10 +4,10 @@ from django.http import HttpResponse
 from django.template import loader
 from server.apps.portfolio.models import Project, Skill
 
-def index(request, project_pk):
+def index(request):
     
     # for projects
-    project = get_object_or_404(Project, pk=project_pk)
+    project = Project.objects.all()
 
     template = loader.get_template('index.html')
     context = {'project': project, }

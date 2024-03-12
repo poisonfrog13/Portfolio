@@ -2,43 +2,22 @@
 
 <!-- PROJECTS -->
 
-<div id='projects' class="d-flex mt-4 border border-dark min-vh-100">
-
-  <div class="container px-4 py-4" id="icon-grid">
-
-    <!-- <h2 class="pb-2 border-bottom">Projects</h2> -->
-    <h2 class="pb-2 border-bottom">Projects</h2>
-
-    <div class="d-flex mt-4 border border-dark">
-
-      <!-- <div class="flex-container"> -->
-
-      <div class="container col-lg-10 px-0 py-0 g-5 ">
-
-        <div class="row align-items-center mb-3 g-5 py-2">
-
-          <div class="col-lg-6">
-
-            <div class="d-flex mt-5 g-5">
-
-              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Habit Tracker App</h1>
-
-            </div>
-
-            <div class="d-flex mt-2 ">
-              <p class="lead">The Habit Tracker app is a versatile tool designed to help users effortlessly monitor and
-                manage their habits. Accessible on any device with internet, fostering positive habits effortlessly.</p>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-10 col-lg-6 px-0">
-            <img src="{% static '/images/collage-app.png' %}" class="d-block mx-lg-auto img-fluid" alt="Screen of code"
-              width="600" height="500" loading="lazy">
-            <!-- <img src="{% static '/images/collage-habits2.png' %}" class="d-block mx-lg-auto img-fluid" alt="Screen of code" width="500" height="500" loading="lazy"> -->
-
-          </div>
-
-        </div>
+<div id='projects' class="d-flex mt-4 pico-background-zinc-900 px-4" style="min-height: 50vh;">
+  <div class="container" style="padding: 8rem 0 8rem 0;">
+    <h2 class="pb-2 mt-0 border-bottom pico-color-sand-50 w-100">Projects</h2>
+    <div class="d-flex" style="gap: 2rem">
+      <div class="w-50">
+        <p class="pico-color-grey-350">I am always looking for projects which challenge me and stretch my skills. I believe that there is no better teacher than failure. But don't tell that to my mentor ;)</p>
+      </div>
+      <div class="w-50">
+        <ol class="pl-5">
+          <li class="pico-color-grey-350">
+            <a href="#project-habit-tracker" class="pico-color-grey-350 fw-semibold">
+              <img style="height: 1rem; width: auto; padding: 0 0.3rem 0 0.65rem;" src="{% static 'icons/graph.svg' %}" alt="graph icon">
+              Habit Tracker
+            </a>
+          </li>
+        </ol>
       </div>
     </div>
   </div>
@@ -46,58 +25,78 @@
 
 
 
+<div class="d-flex overflow-hidden" style="margin-top: 8rem;" id="project-habit-tracker">
+  <div class="container col-lg-10 px-4 py-0 g-5 ">
+    <div class="row align-items-center mb-3 g-5 py-2">
+      <div class="col-lg-6">
+        <div class="d-flex mt-5 g-5">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Habit Tracker App</h1>
+        </div>
+        <div class="d-flex mt-2 ">
+          <p class="lead">The Habit Tracker app is a versatile tool designed to help users effortlessly monitor and
+            manage their habits. Accessible on any device with internet, fostering positive habits effortlessly.</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-10 col-lg-6 px-0">
+        <!-- <img src="{% static '/images/habit_tracker_vscode_main.png' %}" class="d-block mx-lg-auto project-hero" alt="Screen of code" loading="lazy"> -->
+        <img src="{% static '/images/a.png' %}" class="d-block mx-lg-auto project-hero" alt="Screen of code" loading="lazy">
+        <!-- <img src="{% static '/images/collage-habits2.png' %}" class="d-block mx-lg-auto img-fluid" alt="Screen of code" width="500" height="500" loading="lazy"> -->
+      </div>
+    </div>
+  </div>
+</div>
 
-<div class="d-flex mt-4 border border-dark min-vh-100">
+<div class="d-flex mt-4 min-vh-100">
   <div class="container px-4 py-4">
-    <h2 class="pb-2 border-bottom">Habit Tracker</h2>
-
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-3">
-
-
+    <h2 class="pb-2 border-bottom">About Habit Tracker</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-5 py-3 mt-2 mb-5">
       <div class="col d-flex flex-column align-items-start gap-3">
-        <h2 class="fw-bold text-body-emphasis">Motivation</h2>
+        <h3 class="fw-bold mt-0 text-body-emphasis">Motivation</h3>
         <p class="text-body-secondary"> The concept for the Habit Tracker app emerged from a collaboration with a
           frontend developer friend. The inspiration came from my desire to track how many hours I spend programming and
           how many cups of coffee he drinks during one working day as a developer.</p>
-        <a href="https://github.com/poisonfrog13/Habit-Tracker" class="btn btn-outline-dark btn-lg">Source Code</a>
+        <a href="https://github.com/poisonfrog13/Habit-Tracker" class=" d-flex flex-wrap align-items-center gap-2 btn btn-dark btn-lg">
+          <img src="{% static '/icons/github_white.svg' %}" style="height: 1.5rem; width: auto;" alt="Screen of code" width="64" height="64" loading="lazy">
+          Source Code
+        </a>
       </div>
 
 
       <div class="col">
         <div class="row row-cols-1 row-cols-sm-2 g-3">
-          <div class="col d-flex flex-column gap-2">
+          <div class="col d-flex flex-sm-column gap-4">
 
-            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient">
-              <img src="{% static '/icons/app.svg' %}" class="d-block mx-lg-auto img-fluid" alt="Screen of code"
+            <div class="feature-icon-small d-inline-flex align-items-start align-items-sm-center bg-gradient flex-shrink-0">
+              <img src="{% static '/icons/app.svg' %}" class="d-block img-fluid" alt="Screen of code"
                 width="64" height="64" loading="lazy">
             </div>
 
             <p class="text-body-secondary">The backend built with Django and DRF supports fundamental CRUD operations
               for habits and daily records, encompassing both list and detail views.</p>
           </div>
-          <div class="col d-flex flex-column gap-2">
+          <div class="col d-flex flex-sm-column gap-4">
 
-            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient">
-              <img src="{% static '/icons/curly-brackets.svg' %}" class="d-block mx-lg-auto img-fluid"
+            <div class="feature-icon-small d-inline-flex align-items-start align-items-sm-center bg-gradient flex-shrink-0">
+              <img src="{% static '/icons/curly-brackets.svg' %}" class="d-block block img-fluid"
                 alt="Screen of code" width="64" height="64" loading="lazy">
             </div>
             <p class="text-body-secondary">The app built features a REST API providing JSON data and is intended to be
               consumed by a front end web application.</p>
           </div>
 
-          <div class="col d-flex flex-column gap-2">
+          <div class="col d-flex flex-sm-column gap-4">
 
-            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient ">
-              <img src="{% static '/icons/secure.svg' %}" class="d-block mx-lg-auto img-fluid" alt="Screen of code"
+            <div class="feature-icon-small d-inline-flex align-items-start align-items-sm-center bg-gradient  flex-shrink-0">
+              <img src="{% static '/icons/secure.svg' %}" class="d-block img-fluid" alt="Screen of code"
                 width="64" height="64" loading="lazy">
             </div>
             <p class="text-body-secondary">Stateless token-based authentication system ensures secure user access and
               interactions.</p>
           </div>
 
-          <div class="col d-flex flex-column gap-2">
-            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient">
-              <img src="{% static '/icons/test.svg' %}" class="d-block mx-lg-auto img-fluid" alt="Screen of code"
+          <div class="col d-flex flex-sm-column gap-4">
+            <div class="feature-icon-small d-inline-flex align-items-start align-items-sm-center bg-gradient flex-shrink-0">
+              <img src="{% static '/icons/test.svg' %}" class="d-block img-fluid" alt="Screen of code"
                 width="64" height="64" loading="lazy">
             </div>
             <p class="text-body-secondary">Proficient software testing, including pytest and pytest-django, validates

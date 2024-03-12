@@ -1,9 +1,25 @@
+{% load static %}
 <!-- FOOTER -->
 
-<div class="d-flex mt-0 border border-dark"> 
-    <div class="container">
-        <footer class="py-3 my-0"> 
-                <p class="text-center text-body-secondary">Best wishes</p> 
+<div class="d-flex mt-0 pico-background-zinc-900 py-5"> 
+    <div class="container d-flex flex-column-reverse flex-sm-row align-items-center justify-content-sm-between">
+        <p class="text-center pico-color-sand-50 mb-0">
+            <img style="height: 24px; width: 24px; margin-right: 0.25rem;" src="{% static 'icons/game-icons_frog.svg' %}" />
+            Best wishes
+        </p> 
+        <footer class="py-3 my-0 d-flex gap-4 justify-content-center justify-content-sm-end"> 
+                <a href="https://github.com/poisonfrog13">
+                    <div class="icon"><img src="{% static 'icons/github.svg' %}" alt="github icon"></div>
+                </a>
+                <a href="#">
+                    <div class="icon"><img src="{% static 'icons/linkedin.svg' %}" alt="linkedin icon"></div>
+                </a>
+                <a href="#">
+                    <div class="icon"><img src="{% static 'icons/document.svg' %}" alt="resume icon"></div>
+                </a>
+                <a href="#">
+                    <div class="icon"><img src="{% static 'icons/email.svg' %}" alt="send email icon"></div>
+                </a>                
         </footer>
     </div> 
 </div>

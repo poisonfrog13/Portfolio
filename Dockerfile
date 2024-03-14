@@ -8,4 +8,4 @@ RUN pip install poetry && pip install -r requirements.txt
 
 RUN python manage.py collectstatic
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8002"]
+CMD ["gunicorn", "--config", "gunicorn.conf.py", "server.wsgi:application" ]

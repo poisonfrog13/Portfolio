@@ -6,6 +6,12 @@ django==5.0.2 ; python_version >= "3.11" and python_version < "4.0" \
     --hash=sha256:b5bb1d11b2518a5f91372a282f24662f58f66749666b0a286ab057029f728080
 fontawesomefree==6.5.1 ; python_version >= "3.11" and python_version < "4.0" \
     --hash=sha256:8dec4a2ee37bf8e53379ebbf0d38cefec4e06c7c9227f59af39dbb7b1632817b
+gunicorn==21.2.0 ; python_version >= "3.11" and python_version < "4.0" \
+    --hash=sha256:3213aa5e8c24949e792bcacfc176fef362e7aac80b76c56f6b5122bf350722f0 \
+    --hash=sha256:88ec8bff1d634f98e61b9f65bc4bf3cd918a90806c6f5c48bc5603849ec81033
+packaging==24.0 ; python_version >= "3.11" and python_version < "4.0" \
+    --hash=sha256:2ddfb553fdf02fb784c234c7ba6ccc288296ceabec964ad2eae3777778130bc5 \
+    --hash=sha256:eb82c5e3e56209074766e6885bb04b8c38a0c015d0a30036ebe7ece34c9989e9
 pillow-pil==0.1dev ; python_version >= "3.11" and python_version < "4.0" \
     --hash=sha256:d80ee30805f10bf898df9ce7495f46e88990e8f90b5c2b917722d87526252b2c
 pillow==10.2.0 ; python_version >= "3.11" and python_version < "4.0" \
@@ -80,6 +86,9 @@ pillow==10.2.0 ; python_version >= "3.11" and python_version < "4.0" \
 sqlparse==0.4.4 ; python_version >= "3.11" and python_version < "4.0" \
     --hash=sha256:5430a4fe2ac7d0f93e66f1efc6e1338a41884b7ddf2a350cedd20ccc4d9d28f3 \
     --hash=sha256:d446183e84b8349fa3061f0fe7f06ca94ba65b426946ffebe6e3e8295332420c
+tomlkit==0.12.4 ; python_version >= "3.11" and python_version < "4.0" \
+    --hash=sha256:5cd82d48a3dd89dee1f9d64420aa20ae65cfbd00668d6f094d7578a78efbb77b \
+    --hash=sha256:7ca1cfc12232806517a8515047ba66a19369e71edf2439d0f5824f91032b6cc3
 tzdata==2024.1 ; python_version >= "3.11" and python_version < "4.0" and sys_platform == "win32" \
     --hash=sha256:2674120f8d891909751c38abcdfd386ac0a5a1127954fbc332af6b5ceae07efd \
     --hash=sha256:9068bc196136463f5245e51efda838afa15aaeca9903f49050dfa2679db4d252

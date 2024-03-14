@@ -11,6 +11,7 @@ django = "^5.0.2"
 pillow = "^10.2.0"
 pillow-pil = "^0.1.dev0"
 fontawesomefree = "^6.5.1"
+tomlkit = "^0.12.4"
 
 
 [build-system]

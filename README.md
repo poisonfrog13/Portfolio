@@ -3,6 +3,7 @@
 ## Deployment
 Start by cloning the code to the server.
 ```
+git clone git@github.com:poisonfrog13/Portfolio.git
 ```
 
 Next, configure your environment variables.

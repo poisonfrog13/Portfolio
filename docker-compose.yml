@@ -1,0 +1,48 @@
+version: '3.8'
+
+
+services: 
+  nginx:
+    container_name: ngx
+    image: bmduke/recruit.bio:certbot-latest
+    restart: unless-stopped
+    env_file:
+      - env/production/nginx-certbot.env
+    volumes:
+      # Volumes
+      - collect-static:/etc/nginx/static
+      - media:/etc/nginx/media
+      - certificates:/etc/letsencrypt
+      # Bind mounts
+      - type: bind
+        source: nginx/local.conf
+        target: /etc/nginx/nginx.conf
+      - type: bind
+        source: nginx/mime.types
+        target: /etc/nginx/mime.types
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - 'django-app'
+
+
+  django-app:
+    container_name: django
+    env_file:
+      - ./env/production/django.env
+    image: django-app:1.0
+    volumes:
+      - collect-static:/app/server/collected_static
+      - media:/app/server/uploads
+      - db:/app/server/db.sqlite
+    build: .
+    ports:
+      - 8002
+
+volumes:
+  collect-static:
+  media:
+  db:
+  certificates:
+ 

@@ -8,7 +8,7 @@ SECRET_KEY = getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [getenv("ALLOWED_HOSTS")]
+ALLOWED_HOSTS = [host.strip() for host in getenv("ALLOWED_HOSTS").split(',')]
 
 
 print("Running Django with production settings")
